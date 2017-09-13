@@ -1,0 +1,39 @@
+
+.resume-container {
+  box-shadow: 27px 43px 193px 25px rgba(255, 255, 255, 0.25) inset;
+
+.padding-left-border {
+  @extend .padding-left-45;
+}
+
+@media only screen and (max-width: 767px) {
+  .padding-left-border {
+    padding-left: 15px;
+  }
+
+  .no-padding-sm {
+    padding: 0 0 0 0;
+  }
+
+}
+
+}
+
+@media only print {
+  .print-block {
+    width: 100%;
+  }
+
+}
+
+.intro-panel {
+  color: color("sam-white", "base");
+
+  .icon-wrapper {
+    @extend .no-padding;
+    @extend .text-right;
+  }
+  p {
+    margin: 0 0 0;
+  }
+}
